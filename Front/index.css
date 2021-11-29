@@ -134,17 +134,17 @@
 } 
 
 #Form1 {
-    display:grid;
+    display: flex;
+    justify-content: start;
     margin-top: 20px;
-    justify-content: space-around;
     border-radius: 6px;
 }
 
 #Form2{
-    display:grid;
-    padding-right: 220px;
+    display: flex;
+    justify-content: start;
     margin-top: 20px;
-    justify-content: space-around;
+    padding-right: 220px;
     border-radius: 6px;
 }
 
