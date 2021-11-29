@@ -71,6 +71,15 @@
     border-radius: 8px;
 }
 
+#Button2 {
+    background-color: var(--Gabs);
+    color: var(--Tapanupédoreia);
+    width: 150px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    margin-left: 1000px;
+}
+
 #Upper {
     margin-top: 20px;
     margin-bottom: 100px;
@@ -126,6 +135,7 @@
     display:grid;
     margin-top: 20px;
     justify-content: space-around;
+    border-radius: 6px;
 }
 
 #Form2{
@@ -133,6 +143,7 @@
     padding-right: 220px;
     margin-top: 20px;
     justify-content: space-around;
+    border-radius: 6px;
 }
 
 #adjust {
