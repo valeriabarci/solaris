@@ -39,17 +39,16 @@
         <h2>Formulário</h2>
         <article id="Desc3">
             <h3 id="adjust">Cadastre-se</h3>
-            <input type="text" name="nome" placeholder="CPF" id="Form1">
-            <input type="text" name="nome" placeholder="Nome" id="Form2">
-            <input type="text" name="nome" placeholder="E-mail" id="Form1">
-            <input type="text" name="nome" placeholder="CEP" id="Form1">
-            <input type="text" name="nome" placeholder="Endereço" id="Form2">
-            <input type="text" name="nome" placeholder="Nº da casa" id="Form1">
-            <input type="text" name="nome" placeholder="Nº de residentes" id="Form1">
-            <input type="text" name="nome" placeholder="CPF dos Residentes" id="Form1">
-            <input type="text" name="nome" placeholder="Nome Completo do Residente" id="Form2">
-            <input type="text" name="nome" placeholder="Renda Total da Família" id="Form1"> 
-            <!-- Adicionar botão "Adicionar(Botão de +), ao clicar no botão apenas então, mostrar CPF dos Residentes e Nome Completo dos Residentes" -->
+            <label for="cpf" id="Form1">CPF</label><input type="text" name="cpf" id="Form1">
+            <label for="nome" id="Form2">Nome</label><input type="text" name="nome" id="Form2">
+            <label for="email" id="Form1">E-mail</label><input type="text" name="email" id="Form1">
+            <label for="cep">CEP</label><input type="text" name="cep" id="Form1">
+            <label for="endereco" id="Form2">Endereço</label><input type="text" name="endereco" id="Form2">
+            <label for="ndacasa" id="Form1">Nº da Casa</label><input type="text" name="ndacasa" id="Form1">
+            <label for="nderesidentes" id="Form1">Nº de Residentes</label><input type="text" name="nderesidentes" id="Form1">
+            <label for="cpfdosresidentes" id="Form1">CPF dos Residentes</label><input type="text" name="cpfdosresidentes" id="Form1">
+            <label for="nomecompletoresidente" id="Form2">Nome Completo dos Residente</label><input type="text" name="nomecompletoresidente" id="Form2">
+            <label for="rendatotalfamilia" id="Form1">Renda Total da Familia</label><input type="text" name="rendatotalfamilia" id="Form1"> 
             <button id="Button2">Enviar</button>
         </article>
     </main>
@@ -67,3 +66,6 @@
     </footer>
 </body>
 </html>
+
+<!-- Adicionar botão "Adicionar(Botão de +), ao clicar no botão apenas então, mostrar CPF dos Residentes e Nome Completo dos Residentes" -->
+<!--Para tela de login ta suave, usa bootstrap e vai fiot-->
