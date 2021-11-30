@@ -27,6 +27,7 @@
 
 .header1 {
     display: flex;
+    margin-left: 50%;
 }
 
 .header1 a {
@@ -38,8 +39,8 @@
 }
 
 #login {
-    width:7%;
-    margin-left: 50px;
+    width:60%;
+    margin-left: 10%;
 }
 
 #foto{
