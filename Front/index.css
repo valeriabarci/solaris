@@ -7,8 +7,6 @@
     --Tapanupédoreia: #ffffff;
 }
 
-    /* I still like u here miss */
-
 * {
     padding: 0;
     margin: 0;
@@ -47,6 +45,9 @@
 #foto{
     width: 100%;
     border-bottom: var(--Gabs) solid;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 #Text {
@@ -61,15 +62,17 @@
 }
 
 #Button {
-    position: absolute;
+    display: flex;
+    align-items: center;
     background-color: var(--Tapanupédoreia);
     color: var(--Gabs) solid;
-    top:  550px;
-    left: 600px;
-    width: 170px;
+    width: 12%;
     font-size: 1.2rem;
     border-radius: 8px;
     padding: 7px;
+    position: absolute;
+    left: 44%;
+    top: 80%;
 }
 
 #Button2 {
