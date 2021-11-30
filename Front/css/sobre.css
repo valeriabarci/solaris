@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #E6E6E6;
+}
+.container_dev{
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.container_dev .box{
+  width: calc(33% - 10px);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 25px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.box .quote i{
+margin-top: 10px;
+font-size: 45px;
+}
+.container_dev .box .image{
+  margin: 10px 0;
+  height: 150px;
+  width: 150px;
+  padding: 3px;
+  border-radius: 50%;
+  background: #1AEBF5;
+
+}
+.box .image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.box p{
+  text-align: justify;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.box .nome_dev{
+  margin: 10px 0 3px 0;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.box:last-of-type {
+  margin-right: 34%;
+}
+
+.btns{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  transition: all 0.3s linear;
+}
+
+#github {
+  width: 25px;
+  background: transparent;
+  margin-left: 500%;
+}
+
+h1 {
+  text-align: center;
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #17c0eb;
+}
+
+#Button3 {
+  background-color: var(--Gabs);
+  color: var(--Tapanupédoreia);
+  width: 140px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  margin-left: 600%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#Button3:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+@media (max-width:1045px){
+  .container_dev .box{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:710px){
+  .container_dev .box{
+    width: 100%;
+  }
+}
+
+
