@@ -90,7 +90,7 @@
 
 #Upper {
     margin-top: 2%;
-    margin-bottom: 1%;
+    margin-bottom: 15%;
 }
 
 #Desc {
@@ -158,6 +158,18 @@
     margin-bottom: 70px;
 }
 
+.images-dash {
+    padding: 15px;
+    text-align: center;
+}
+
+.images-dash img {
+    max-height: 800px;
+    max-width: 800px;
+    width: auto;
+    height: auto;
+}
+
 h2 {
     padding: 30px;
 }
@@ -174,6 +186,8 @@ header {
     border-bottom: 4px var(--Gabs) solid;
 }
 
+<<<<<<< HEAD
+=======
 #grafico-pizza {
     padding-top: 20px;
 }
@@ -203,21 +217,20 @@ header {
     background-color: rgb(230, 230, 230);
 }
 
+>>>>>>> 12fdf98e40e45972307c1a84e349a26b07e31d81
 footer {
     background-color: var(--Cinzao);
     border-top: var(--Gabs) solid;
     display: flex;
-
     padding: 20px;
 }
 
 footer ul li{
     display: flex;
+    list-style: none;
     margin-top: 2%;
-    margin-left: 50%;
-    align-items: center;
-    text-align: center;
     padding: 0 12px;
+    margin-left: 400px;
 }
 
 footer img {
