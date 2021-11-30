@@ -6,21 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="modal.css">
     <title>Solaris Franca - Admin</title>
 </head>
 <body>
     <header>
-        <img id="Logo" src="Logo Solaris.svg" alt="Logo Solaris">
+        <img id="Logo" src="./img/Logo Solaris.svg" alt="Logo Solaris">
         <h2 id="Tittle">Solaris Franca</h2>
         <div class="header1">
-            <a class="htp1">
-                <a href="./index.html" class="inicio"><p>Inicio</p></a>
-                <a href="#" class="inicio"><p>Sobre</p></a>
-                <a href="#" class="inicio"><p>Contato</p></a>
-                <a href="/Front/dashboard.html"><img id="login" src="login.png" alt="Login"></a>
-            </a>
+                <!-------------------MENU------------------------->
+                <a href="./index.html" id="htp1"><p>Inicio</p></a>
+                <a href="#" id="htp1"><p>Sobre</p></a>
+                <a href="#" id="htp1"><p>Contato</p></a>
+                <div class="center">
+                    <button id="btn-login" onclick="openLoginForm()"><i class="fa fa-user" aria-hidden="true"></button></i>
+                  </div>
+                  <div class="popup-overlay"></div>
+
+                    <!-------------------LOGIN------------------------->
+                    <div class="popup">
+                        <div class="popup-close" sizes="32x32" onclick="closeLoginForm()">×</div>
+                        <div class="form">
+                        <div class="avatar"></div>
+                        <div class="header">Login</div>
+                        <div class="element">
+                            <label for="cpf">CPF</label>
+                            <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');">
+                        </div>
+                        <div class="element">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password">
+                        </div>
+                        <div class="element">
+                            <p id="forgot"><a>Esqueceu a senha?</a></p>
+                            <button class="button-login"><a href="./dashboard.html">Login</button></a>
+                        </div>
+                    </div>
+                </div>
         </div>
     </header>
+        <!-----------------------IMAGENS DOS GRÁFICOS-------------------------------------->
     <div class="images-dash">
         <div class="bg-gray">
             <img id="painel" src="./img/paineldecontrole.jpg" alt="Painel de Controle">
@@ -35,19 +60,20 @@
             <img id="classesocial" src="./img/classesocial.jpg" alt="Classe social">
         </div>
     </div>
+    <!------------------------------FOOTER-------------------------------------------->
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col">
                     <ul>
-                        <li><img src="./Logo Solaris 2.svg" alt="logo">
+                        <li><img src="./img/Logo Solaris 2.svg" alt="logo">
                     </ul>
                 </div>
                 <div class="footer-col">
                     <ul>
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Contato</a></li>
-                        <br>
+                            <br>
                         <li>Todos os Direitos Reservados</li>
                         <li>Franca Solaris</li>
                     </ul>
@@ -62,9 +88,10 @@
             </div>
         </div>
     </footer>
-<script src="../Back/src/api/validacoes/validacep.js"></script>
-<script src="../Back/src/api/validacoes/validacaoadmin.js"></script>
-<script src="../Back/src/api/validacoes/validacpf.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="../Back/src/api/validacoes/validacep.js"></script>
+    <script src="../Back/src/api/validacoes/validacpf.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
