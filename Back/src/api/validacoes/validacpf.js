@@ -16,7 +16,7 @@ function TestaCPF(strCPF) {
 
     if ((Resto == 10) || (Resto == 11))  Resto = 0;
     if (Resto != parseInt(strCPF.substring(10, 11) ) ) return false;
-    return true;
+    // return true;
 }
 var strCPF = "12345678909";
 alert(TestaCPF(strCPF));
