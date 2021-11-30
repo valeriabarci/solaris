@@ -86,8 +86,8 @@
 }
 
 #Upper {
-    margin-top: 20px;
-    margin-bottom: 100px;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
 
 #Desc {
@@ -175,30 +175,22 @@ footer {
     background-color: var(--Cinzao);
     border-top: var(--Gabs) solid;
     display: flex;
+
     padding: 20px;
-    /* justify-content: space-around; */
 }
 
 footer ul li{
-    background-color: var(--Cinzao);
+    display: flex;
+    margin-top: 2%;
+    margin-left: 50%;
+    align-items: center;
     text-align: center;
-    list-style: none;
+    padding: 0 12px;
 }
 
 footer img {
     width: 10%;
 }
-
-
-
-footer ul li {
-    margin-top: 20px;
-    margin-left: 450px;
-    display: block;
-    padding: 0 12px;
-}
-
-
 
 @media screen and (max-width: 1020px) {
     main {
