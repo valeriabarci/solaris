@@ -55,8 +55,8 @@
     background-color: rgba(0, 0, 0, 0);
     color: var(--Tapanupédoreia);
     text-align: center;
-    top: 260px;
-    left: 470px;
+    top: 40%;
+    left: 35%;
     width: 400px;
     font-size: 3rem;
 }
@@ -72,7 +72,7 @@
     padding: 7px;
     position: absolute;
     left: 44%;
-    top: 80%;
+    top: 85%;
 }
 
 #Button2 {
