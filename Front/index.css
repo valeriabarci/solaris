@@ -66,17 +66,12 @@
 }
 
 #Button {
-    display: flex;
-    align-items: center;
     background-color: var(--Tapanupédoreia);
-    color: var(--Gabs) solid;
-    width: 12%;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    padding: 7px;
-    position: absolute;
-    left: 44%;
-    top: 85%;
+    color: var(--Gabs);
+    width: 140px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    margin: 5px;
 }
 
 #Button2 {

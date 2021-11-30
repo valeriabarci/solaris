@@ -10,77 +10,86 @@
     <title>Solaris Franca</title>
 </head>
 <body>
+    <!-------------------HEADER------------------------->
     <header>
         <img id="Logo" src="Logo Solaris.svg" alt="Logo Solaris">
         <h2 id="Tittle">Solaris Franca</h2>
         <div class="header1">
+                <!-------------------MENU------------------------->
                 <a href="./index.html" id="htp1"><p>Inicio</p></a>
-                <a href="#" id="htp1""><p>Sobre</p></a>
+                <a href="#" id="htp1"><p>Sobre</p></a>
                 <a href="#" id="htp1"><p>Contato</p></a>
                 <div class="login-button">
                     <ul>
-                    <li><a href="#"><i class="fa fa-user-circle"><button id="login" onclick="openLoginForm()"></button></i>
-                    </a></li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-user-circle">   
+                                    <button id="login" onclick="openLoginForm()"></button>
+                                </i>
+                            </a>
+                        </li>
                     </ul>
-                <div class="center">
-                </button>
+
+                    <!-------------------LOGIN------------------------->
+                    <div class="popup">
+                        <div class="popup-close" onclick="closeLoginForm()">×</div>
+                        <div class="form">
+                        <div class="avatar"></div>
+                        <div class="header">Login</div>
+                        <div class="element">
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf">
+                        </div>
+                        <div class="element">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password">
+                        </div>
+                        <div class="element">
+                            <button class="button-login">Login</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="popup">
-                    <div class="popup-close" onclick="closeLoginForm()">×</div>
-                    <div class="form">
-                    <div class="avatar">
-                    </div>
-                    <div class="header">
-                      Login
-                    </div>
-                    <div class="element">
-                      <label for="cpf">CPF</label>
-                      <input type="text" id="cpf">
-                    </div>
-                    <div class="element">
-                      <label for="password">Senha</label>
-                      <input type="password" id="password">
-                    </div>
-                    <div class="element">
-                      <button class="button-login">Login</button>
-                    </div>
-                  </div>
-                </div>
-                <script src="./script.js"></script>
+            <script src="./script.js"></script>
         </div>
     </header>
     <main>
+        <!-------------------IMAGEM CENTRAL + CADASTRO------------------------->
         <div>
-            <img id="foto" src="placa.png" alt="Painél Solar"> 
-            <p id="Text">
-                <b>Por uma cidade limpa e sustentável</b>
-            </p>
-            <button id="Button">Cadastre-se</button>
-            </div>
+            <p id="Text"> 
+                <b>Por uma cidade limpa e sustentável
+                    <button id="Button">Cadastre-se</button>
+                </b>    
+            </p>    
+            <img id="foto" src="placa.png" alt="Painél Solar">      
         </div>
+        <!-------------------TEXTO1------------------------->
         <article id="Desc">
             <p>Este projeto tem por objetivo realizar o cadastramento de todos os moradores da cidade de Franca e conceder o acesso à energia limpa e sustentável através dos painéis solares.
-                Você realizará seu cadastro, será feito uma análise dos dados e iremos notificá-lo em todos os processos até o agendamento da instalação dos painéis solares, tendo em mente que este será um serviço totalmente <a href="#"><b>gratuito</b></a>!!!</p>
+            Você realizará seu cadastro, será feito uma análise dos dados e iremos notificá-lo em todos os processos até o agendamento da instalação dos painéis solares, tendo em mente que este será um serviço totalmente <a href="#"><b>gratuito</b></a>!!!</p>
         </article>
+        <!-------------------TEXTO2------------------------->
         <article id="Desc2">
             <p>O painel solar (placa solar fotovoltaica) é o equipamento essencial para se gerar energia fotovoltaica, o qual é composto por células fotovoltaicas fabricadas a partir de materiais semicondutores, como o silício, que absorvem a luz do sol e geram energia elétrica pelo efeito fotovoltaico.</p>
         </article>
+
+        <!-------------------FORMULÁRIO DE CADASTRO------------------------->
         <h2>Formulário</h2>
         <article id="Desc3">
             <h3 id="adjust">Cadastre-se</h3>
-            <label for="cpf" id="Form1">CPF</label><input type="text" name="cpf" id="Form1">
-            <label for="nome" id="Form2">Nome</label><input type="text" name="nome" id="Form2">
-            <label for="email" id="Form1">E-mail</label><input type="text" name="email" id="Form1">
-            <label for="cep">CEP</label><input type="text" name="cep" id="Form1">
-            <label for="endereco" id="Form2">Endereço</label><input type="text" name="endereco" id="Form2">
-            <label for="ndacasa" id="Form1">Nº da Casa</label><input type="text" name="ndacasa" id="Form1">
-            <label for="nderesidentes" id="Form1">Nº de Residentes</label><input type="text" name="nderesidentes" id="Form1">
-            <label for="cpfdosresidentes" id="Form1">CPF dos Residentes</label><input type="text" name="cpfdosresidentes" id="Form1">
-            <label for="nomecompletoresidente" id="Form2">Nome Completo dos Residente</label><input type="text" name="nomecompletoresidente" id="Form2">
-            <label for="rendatotalfamilia" id="Form1">Renda Total da Familia</label><input type="text" name="rendatotalfamilia" id="Form1"> 
+                <label for="cpf" id="Form1">CPF</label><input type="text" name="cpf" id="Form1" placeholder="Digite seu CPF">
+                <label for="nome" id="Form2">Nome</label><input type="text" name="nome" id="Form2" placeholder="Digite seu Nome">
+                <label for="email" id="Form1">E-mail</label><input type="text" name="email" id="Form1" placeholder="Digite seu E-mail">
+                <label for="cep">CEP</label><input type="text" name="cep" id="Form1" placeholder="Digite seu CEP">
+                <label for="endereco" id="Form2">Endereço</label><input type="text" name="endereco" id="Form2" placeholder="Digite seu Endereço">
+                <label for="ndacasa" id="Form1">Nº da Casa</label><input type="text" name="ndacasa" id="Form1" placeholder="Digite Nº da Casa">
+                <label for="nderesidentes" id="Form1">Nº de Residentes</label><input type="text" name="nderesidentes" id="Form1" placeholder="Digite Nº de Residentes">
+                <label for="cpfdosresidentes" id="Form1">CPF dos Residentes</label><input type="text" name="cpfdosresidentes" id="Form1" placeholder="Digite CPF dos Residentes">
+                <label for="nomecompletoresidente" id="Form2">Nome Completo dos Residente</label><input type="text" name="nome" id="Form2" placeholder="Digite aqui!">
+                <label for="rendatotalfamilia" id="Form1">Renda Total da Familia</label><input type="text" name="rendatotalfamilia" id="Form1" placeholder="R$"> 
             <button id="Button2">Enviar</button>
         </article>
     </main>
+    <!-------------------FOOTER------------------------->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -93,7 +102,7 @@
                     <ul>
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Contato</a></li>
-                        <br>
+                            <br>
                         <li>Todos os Direitos Reservados</li>
                         <li>Franca Solaris</li>
                     </ul>
@@ -115,6 +124,3 @@
 
 </body>
 </html>
-
-<!-- Adicionar botão "Adicionar(Botão de +), ao clicar no botão apenas então, mostrar CPF dos Residentes e Nome Completo dos Residentes" -->
-<!--Para tela de login ta suave, usa bootstrap e vai fiot-->
