@@ -184,8 +184,6 @@ header {
     border-bottom: 4px var(--Gabs) solid;
 }
 
-<<<<<<< HEAD
-=======
 #grafico-pizza {
     padding-top: 20px;
 }
@@ -215,7 +213,6 @@ header {
     background-color: rgb(230, 230, 230);
 }
 
->>>>>>> 12fdf98e40e45972307c1a84e349a26b07e31d81
 footer {
     background-color: var(--Cinzao);
     border-top: var(--Gabs) solid;
@@ -229,7 +226,8 @@ footer ul li{
     margin-top: 2%;
     padding: 0 12px;
     margin-left: 400px;
-}
+    justify-content: center;
+}  
 
 footer img {
     width: 10%;
