@@ -26,7 +26,7 @@
 }
 
 .header1 {
-    margin-left: 48%;
+    display: flex;
 }
 
 .header1 a {
