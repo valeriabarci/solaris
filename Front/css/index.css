@@ -198,7 +198,7 @@ main {
 
 header {
     background-color: var(--Cinzao);
-    padding: 20px;  
+    padding: 10px;  
     display: flex;
     align-items: center;
     border-bottom: 4px var(--Gabs) solid;
