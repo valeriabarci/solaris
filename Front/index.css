@@ -184,6 +184,38 @@ header {
     border-bottom: 4px var(--Gabs) solid;
 }
 
+<<<<<<< HEAD
+=======
+#grafico-pizza {
+    padding-top: 20px;
+}
+
+.images-dash {
+    padding: 15px;
+    text-align: center;
+}
+
+.images-dash img {
+    max-height: 800px;
+    max-width: 800px;
+    width: auto;
+    height: auto;
+}
+
+.bg-gray {
+    background-color: rgb(230, 230, 230);
+    border: 2px solid rgb(230, 230, 230);
+    padding: 5px;
+    width: 100%;
+}
+
+.bg-dash {
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: rgb(230, 230, 230);
+}
+
+>>>>>>> 12fdf98e40e45972307c1a84e349a26b07e31d81
 footer {
     background-color: var(--Cinzao);
     border-top: var(--Gabs) solid;
