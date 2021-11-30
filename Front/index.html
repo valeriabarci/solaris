@@ -20,16 +20,15 @@
                 <a href="./index.html" id="htp1"><p>Inicio</p></a>
                 <a href="./sobre.html" id="htp1"><p>Sobre</p></a>
                 <a href="#" id="htp1"><p>Contato</p></a>
+                <!-------------------LOGIN------------------------->
                 <div class="center">
                     <button id="btn-login" onclick="openLoginForm()"><i class="fa fa-user" aria-hidden="true"></button></i>
                   </div>
                   <div class="popup-overlay"></div>
-
-                    <!-------------------LOGIN------------------------->
+                    
                     <div class="popup">
                         <div class="popup-close" sizes="32x32" onclick="closeLoginForm()">×</div>
                         <div class="form">
-                        <div class="avatar"></div>
                         <div class="header">Login</div>
                         <div class="element">
                             <label for="cpf">CPF</label>
@@ -40,7 +39,8 @@
                             <input type="password" id="password">
                         </div>
                         <div class="element">
-                            <p id="forgot"><a href="#">Esqueceu a senha?</a></p>
+                            <p id="forgot"><a href="#" onclick="openEsqueciMeuForm()">Esqueceu a senha?</a></p>
+                            
                             <button class="button-login"><a href="./dashboard.html">Login</button></a>
                         </div>
                     </div>
