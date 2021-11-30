@@ -240,6 +240,22 @@ footer img {
         max-width: 15%;
         max-height: 100%;
         width:60%;
+    }
+
+    #Text {
+        text-align: center;
+        top: 40%;
+        left: 40%;
+        width: 400px;
+        font-size: 3.5rem;
+    }
+
+    #Button {
+        font-size: 1.2rem;
+        top: 75%;
+        width: 8%;
+        left: 46%;
+    }
 }
 
 @media screen and (max-width: 1020px) {
