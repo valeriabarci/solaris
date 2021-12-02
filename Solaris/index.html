@@ -7,9 +7,15 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <script src="../Back/src/api/consultacep.js" type='module' defer></script>
     <title>Solaris Franca</title>
 </head>
 <body>
+    <script>
+        function funcao1()
+        {
+        alert("Cadastro realizado com sucesso!");
+        }
     <!-------------------HEADER------------------------->
     <header>
         
@@ -69,28 +75,43 @@
         <h2>Formulário</h2>
         <article id="Desc3">
             <h3 id="adjust">Cadastre-se</h3>
+                <form method="POST" action="salva_mensagem"
                 <label for="cpf" id="Form1">CPF </label>
-                <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');" id="Form1" placeholder="Digite seu CPF">
+                <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');" id="cpf">
                 <br>
-                <label for="nome" id="Form2">Nome </label><input type="text" name="nome" id="Form2" placeholder="Digite seu Nome">
+                <label for="nome" id="Form2">Nome </label>
+                <input type="text" name="nome" id="nome">
                 <br>
-                <label for="email" id="Form1">E-mail </label><input type="text" name="email" id="Form1" placeholder="Digite seu E-mail">
+                <label for="email" id="Form1">E-mail </label>
+                <input type="text" name="email" id="email">
                 <br>
                 <label for="cep">CEP </label>
-                <input type="text" class="form-control" onkeypress="$(this).mask('00.000-000')" id="Form1" placeholder="Digite seu CEP">
+                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" />
                 <br>
-                <label for="endereco" id="Form2">Endereço </label><input type="text" name="endereco" id="Form2" placeholder="Digite seu Endereço">
+                <label for="endereco" id="Form2">Endereço </label>
+                <input type="text" name="endereco" id="endereco">
                 <br>
-                <label for="ndacasa" id="Form1">Nº da Casa </label><input type="text" name="ndacasa" id="Form1" placeholder="Digite Nº da Casa">
+                <label for="ndacasa" id="Form1">Nº </label>
+                <input type="text" name="ndacasa" id="numero">
                 <br>
-                <label for="nderesidentes" id="Form1">Nº de Residentes </label><input type="text" name="nderesidentes" id="Form1" placeholder="Digite Nº de Residentes">
+                <label for="endereco" id="Form2">Bairro </label>
+                <input type="text" name="endereco" id="bairro">
                 <br>
-                <label for="cpfdosresidentes" id="Form1">CPF dos Residentes </label><input type="text" name="cpfdosresidentes" id="Form1" placeholder="Digite CPF dos Residentes">
+                <label for="nderesidentes" id="Form1">Nº de Residentes </label>
+                <input type="text" name="nderesidentes" id="numero">
                 <br>
-                <label for="nomecompletoresidente" id="Form2">Nome Completo dos Residente </label><input type="text" name="nome" id="Form2" placeholder="Digite aqui!">
+                <label for="cpfdosresidentes" id="Form1">CPF dos Residentes </label>
+                <input type="text" name="cpfdosresidentes" id="cpf">
                 <br>
-                <label for="rendatotalfamilia" id="Form1">Renda Total da Familia </label><input type="text" name="rendatotalfamilia" id="Form1" placeholder="R$"> 
-            <button id="Button2">Enviar</button>
+                <label for="nomecompletoresidente" id="Form2">Nome Completo dos Residente </label>
+                <input type="text" name="nome" id="nome">
+                <br>
+                <label for="rendatotalfamilia" id="Form1">Renda Total da Familia </label>
+                    <input type="text" name="rendatotalfamilia" id="renda">
+            </form>
+            <button type="submit" id="Button2">Enviar</button>
+            <input type="button"id="Button2" onclick="funcao1()" value="Exibir Alert">Enviar</input>
+            
         </article>
     </main>
     <!-------------------FOOTER------------------------->
@@ -123,8 +144,6 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-    <script src="../Back/src/api/validacoes/validacep.js"></script>
-    <script src="../Back/src/api/validacoes/validacpf.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

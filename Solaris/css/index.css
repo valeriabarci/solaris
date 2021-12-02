@@ -158,14 +158,14 @@
     
 } 
 
-#Form1 {
+#email, #numero, #bairro, #cpf, #renda, #cep, #Form1 {
     margin-top: 20px;
     border-radius: 6px;
     padding: 4px;
     width: 200px;
 }
 
-#Form2{
+#endereco, #nome, #Form2{
     padding: 4px;
     margin-top: 20px;
     border-radius: 6px;
