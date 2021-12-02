@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./script.js">
     <title>Solaris Franca</title>
 </head>
 <body>
@@ -51,7 +52,7 @@
         <div>
             <p id="Text"> 
                 Por uma cidade limpa e sustentável
-                    <button id="Button">Cadastre-se</button>    
+                    <button id="Button"><a href="#anchor">Cadastre-se</a></button>
             </p>    
             <img id="foto" src="./img/placa.png" alt="Painél Solar">      
         </div>
@@ -66,33 +67,36 @@
         </article>
 
         <!-------------------FORMULÁRIO DE CADASTRO------------------------->
-        <h2>Formulário</h2>
-        <article id="Desc3">
-            <h3 id="adjust">Cadastre-se</h3>
-                <label for="cpf" id="Form1">CPF </label>
-                <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');" id="Form1" placeholder="Digite seu CPF">
-                <br>
-                <label for="nome" id="Form2">Nome </label><input type="text" name="nome" id="Form2" placeholder="Digite seu Nome">
-                <br>
-                <label for="email" id="Form1">E-mail </label><input type="text" name="email" id="Form1" placeholder="Digite seu E-mail">
-                <br>
-                <label for="cep">CEP </label>
-                <input type="text" class="form-control" onkeypress="$(this).mask('00.000-000')" id="Form1" placeholder="Digite seu CEP">
-                <br>
-                <label for="endereco" id="Form2">Endereço </label><input type="text" name="endereco" id="Form2" placeholder="Digite seu Endereço">
-                <br>
-                <label for="ndacasa" id="Form1">Nº da Casa </label><input type="text" name="ndacasa" id="Form1" placeholder="Digite Nº da Casa">
-                <br>
-                <label for="nderesidentes" id="Form1">Nº de Residentes </label><input type="text" name="nderesidentes" id="Form1" placeholder="Digite Nº de Residentes">
-                <br>
-                <label for="cpfdosresidentes" id="Form1">CPF dos Residentes </label><input type="text" name="cpfdosresidentes" id="Form1" placeholder="Digite CPF dos Residentes">
-                <br>
-                <label for="nomecompletoresidente" id="Form2">Nome Completo dos Residente </label><input type="text" name="nome" id="Form2" placeholder="Digite aqui!">
-                <br>
-                <label for="rendatotalfamilia" id="Form1">Renda Total da Familia </label><input type="text" name="rendatotalfamilia" id="Form1" placeholder="R$"> 
-            <button id="Button2">Enviar</button>
-        </article>
+        <div id="anchor">
+            <h2>Formulário</h2>
+            <article id="Desc3">
+                <h3 id="adjust">Cadastre-se</h3>
+                    <label for="cpf" id="Form1">CPF </label>
+                    <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');" id="Form1" placeholder="Digite seu CPF">
+                    <br>
+                    <label for="nome" id="Form2">Nome </label><input type="text" name="nome" id="Form2" placeholder="Digite seu Nome">
+                    <br>
+                    <label for="email" id="Form1">E-mail </label><input type="text" name="email" id="Form1" placeholder="Digite seu E-mail">
+                    <br>
+                    <label for="cep">CEP </label>
+                    <input type="text" class="form-control" onkeypress="$(this).mask('00.000-000')" id="Form1" placeholder="Digite seu CEP">
+                    <br>
+                    <label for="endereco" id="Form2">Endereço </label><input type="text" name="endereco" id="Form2" placeholder="Digite seu Endereço">
+                    <br>
+                    <label for="ndacasa" id="Form1">Nº da Casa </label><input type="text" name="ndacasa" id="Form1" placeholder="Digite Nº da Casa">
+                    <br>
+                    <label for="nderesidentes" id="Form1">Nº de Residentes </label><input type="text" name="nderesidentes" id="Form1" placeholder="Digite Nº de Residentes">
+                    <br>
+                    <label for="cpfdosresidentes" id="Form1">CPF dos Residentes </label><input type="text" name="cpfdosresidentes" id="Form1" placeholder="Digite CPF dos Residentes">
+                    <br>
+                    <label for="nomecompletoresidente" id="Form2">Nome Completo dos Residente </label><input type="text" name="nome" id="Form2" placeholder="Digite aqui!">
+                    <br>
+                    <label for="rendatotalfamilia" id="Form1">Renda Total da Familia </label><input type="text" name="rendatotalfamilia" id="Form1" placeholder="R$"> 
+                <button id="Button2">Enviar</button>
+            </article>
+        </div>
     </main>
+          
     <!-------------------FOOTER------------------------->
     <footer class="footer">
         <div class="container">
