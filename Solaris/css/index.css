@@ -70,20 +70,20 @@
     font-weight: bold;
 }
 
+#Button a {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+}
+
 #Button {
     background-color: #fff;
-    color: #000;
+    color: #fff;
     width: 140px;
     font-size: 1.1rem;
     border-radius: 4px;
     margin-left: 5%;
     padding: 10px;
-}
-
-#Button:hover {
-    background-color:#000;
-    color: #fff;
-    cursor: pointer;
 }
 
 #Button2 {

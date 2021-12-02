@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/modal.css">
     <script src="../Back/src/api/consultacep.js" type='module' defer></script>
+    <link rel="stylesheet" href="./script.js">
     <title>Solaris Franca</title>
 </head>
 <body>
@@ -57,9 +58,9 @@
         <div>
             <p id="Text"> 
                 Por uma cidade limpa e sustentável
-                    <button id="Button">Cadastre-se</button>    
+                    <button id="Button"><a href="#anchor">Cadastre-se</a></button>
             </p>    
-            <img id="foto" src="./img/placa.png" alt="Painél Solar">      
+            <img id="foto" src="./img/placa.png" alt="Painél Solar">   
         </div>
         <!-------------------TEXTO1------------------------->
         <article id="Desc">
@@ -73,6 +74,7 @@
 
         <!-------------------FORMULÁRIO DE CADASTRO------------------------->
         <h2>Formulário</h2>
+        <div id="anchor">
         <article id="Desc3">
             <h3 id="adjust">Cadastre-se</h3>
                 <form method="POST" action="salva_mensagem"
@@ -114,6 +116,7 @@
             
         </article>
     </main>
+
     <!-------------------FOOTER------------------------->
     <footer class="footer">
         <div class="container">
