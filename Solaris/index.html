@@ -88,14 +88,12 @@
                 <br>
                 <label for="nderesidentes" id="Form1">Nº de Residentes </label><input type="text" name="nderesidentes" id="numero">
                 <br>
-                <label for="cpfdosresidentes" id="Form1">CPF dos Residentes </label><input type="text" name="cpfdosresidentes" id="cpf">
+                <label for="cpfdosresidentes" id="Form1">CPF dos Residentes </label><input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');" id="cpf">
                 <br>
                 <label for="nomecompletoresidente" id="Form2">Nome Completo dos Residente </label><input type="text" name="nome" id="nome">
                 <br>
                 <label for="rendatotalfamilia" id="Form1">Renda Total da Familia </label><input type="text" name="rendatotalfamilia" id="renda">
-            </form>
-            <button type="submit" id="Button2">Enviar</button>
-            
+                <button type="submit" id="Button2" onclick="funcao1()">Enviar</button>
         </article>
     </main>
 
@@ -127,6 +125,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        function funcao1(){
+        alert("Cadastro realizado com sucesso!");
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="./script.js"></script>

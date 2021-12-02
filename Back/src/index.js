@@ -22,6 +22,7 @@ app.use(routesPrefeitura);
 app.use(routesSistema);
 app.use(routesPainel);
 
+
 http.createServer(app).listen(app.get('porta'), function() {
     console.log('\nServidor Rodando ' + app.get('url') + app.get('porta'));
 });
