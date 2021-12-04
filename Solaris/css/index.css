@@ -3,8 +3,8 @@
     --Bluzao:rgb(52, 63, 180);
     --Cinzao:#DBDBDB;
     --CinzaoGabs: #555454;
-    --Gabs:#000000;
-    --Tapanupédoreia: #ffffff;
+    --Gabs:#000;
+    --Tapanupédoreia: #fff;
 }
 
 * {
@@ -158,14 +158,14 @@
     
 } 
 
-#email, #numero, #bairro, #cpf, #renda, #cep, #Form1 {
+#email, #num_residencial, #bairro, #cpf, #renda_total, #cep, #qtd, #Form1 {
     margin-top: 20px;
     border-radius: 6px;
     padding: 4px;
     width: 200px;
 }
 
-#endereco, #nome, #Form2{
+#rua, #nome, #Form2{
     padding: 4px;
     margin-top: 20px;
     border-radius: 6px;

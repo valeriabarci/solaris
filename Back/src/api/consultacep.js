@@ -1,14 +1,14 @@
 'use strict';
 
-const limparFormulario = (endereco) =>{
-    document.getElementById('endereco').value = '';
+const limparFormulario = (rua) =>{
+    document.getElementById('rua').value = '';
     document.getElementById('bairro').value = '';
 }
 
 
-const preencherFormulario = (endereco) =>{
-    document.getElementById('endereco').value = endereco.logradouro;
-    document.getElementById('bairro').value = endereco.bairro;
+const preencherFormulario = (rua) =>{
+    document.getElementById('rua').value = rua.logradouro;
+    document.getElementById('bairro').value = rua.bairro;
 }
 
 
@@ -23,14 +23,14 @@ const pesquisarCep = async() => {
     const url = `https://viacep.com.br/ws/${cep}/json/`;
     if (cepValido(cep)){
         const dados = await fetch(url);
-        const endereco = await dados.json();
-        if (endereco.hasOwnProperty('erro')){
-            document.getElementById('endereco').value = 'CEP não encontrado!';
+        const rua = await dados.json();
+        if (rua.hasOwnProperty('erro')){
+            document.getElementById('rua').value = 'CEP não encontrado!';
         }else {
-            preencherFormulario(endereco);
+            preencherFormulario(rua);
         }
     }else{
-        document.getElementById('endereco').value = 'CEP incorreto!';
+        document.getElementById('rua').value = 'CEP incorreto!';
     }
 
 }

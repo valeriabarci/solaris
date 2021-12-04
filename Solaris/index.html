@@ -33,11 +33,11 @@
                         <div class="form">
                         <div class="header">Login</div>
                         <div class="element">
-                            <label for="cpf">CPF</label>
+                            <label for="Id do sistema">Id </label>
                             <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');">
                         </div>
                         <div class="element">
-                            <label for="password">Senha</label>
+                            <label for="cpf">Senha </label>
                             <input type="password" id="password">
                         </div>
                         <div class="element">
@@ -72,26 +72,28 @@
         <div id="anchor">
         <article id="Desc3">
             <h3 id="adjust">Cadastre-se</h3>
+                <form action="/form_register" method="post">
                 <label for="nome" id="Form2">Nome </label><input type="text" name="nome" id="nome">
                 <br>
                 <label for="email" id="Form1">E-mail </label><input type="text" name="email" id="email">
                 <br>
                 <label for="cep">CEP </label><input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" />
                 <br>
-                <label for="endereco" id="Form2">Endereço </label><input type="text" name="endereco" id="endereco">
+                <label for="endereco" id="Form2">Endereço </label><input type="text" name="rua" id="rua">
                 <br>
-                <label for="ndacasa" id="Form1">Nº </label><input type="text" name="ndacasa" id="numero">
+                <label for="ndacasa" id="Form1">Nº </label><input type="text" name="num_residencial" id="num_residencial">
                 <br>
                 <label for="endereco" id="Form2">Bairro </label><input type="text" name="bairro" id="bairro">
                 <br>
-                <label for="nderesidentes" id="Form1">Nº de Residentes </label><input type="text" name="nderesidentes" id="numero">
+                <label for="nderesidentes" id="Form1">Nº de Residentes </label><input type="text" name="qtd" id="qtd">
                 <br>
                 <label for="cpfdosresidentes" id="Form1">CPF dos Residentes </label><input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');" id="cpf">
                 <br>
-                <label for="nomecompletoresidente" id="Form2">Nome Completo dos Residente </label><input type="text" name="nome" id="nome">
+                <label for="nomecompletoresidente" id="Form2">Nome Completo dos Residentes </label><input type="text" name="nome" id="nome2">
                 <br>
-                <label for="rendatotalfamilia" id="Form1">Renda Total da Familia </label><input type="text" name="rendatotalfamilia" id="renda">
+                <label for="rendatotalfamilia" id="Form1">Renda Total da Familia </label><input type="text" name="renda_total" id="renda_total">
                 <button type="submit" id="Button2" onclick="funcao1()">Enviar</button>
+                </form>
         </article>
     </main>
 
