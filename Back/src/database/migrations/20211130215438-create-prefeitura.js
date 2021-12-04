@@ -10,6 +10,12 @@ module.exports = {
         primaryKey: true,
       },
       
+      cnpj: {
+        type: Sequelize.STRING(14),
+        allowNull: false,
+        unique: true
+      },
+
       created_at: {
         allowNull: false,
         type: Sequelize.DATE,

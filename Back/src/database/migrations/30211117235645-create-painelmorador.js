@@ -10,7 +10,7 @@ module.exports = {
         primaryKey: true,
       },
       
-      cod_morador: {
+      cpf_morador: {
         type: Sequelize.INTEGER,
         allowNull: true,
         references: {

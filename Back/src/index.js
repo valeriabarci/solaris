@@ -12,7 +12,7 @@ require('./database/indexDb.js');
 const app = express();
 
 app.set('url', 'http://localhost:');
-app.set('porta', 3330);
+app.set('porta', 3332);
 
 app.use(express.json());
 app.use(routesAdministrador);
@@ -21,7 +21,6 @@ app.use(routesPainelMorador);
 app.use(routesPrefeitura);
 app.use(routesSistema);
 app.use(routesPainel);
-
 
 http.createServer(app).listen(app.get('porta'), function() {
     console.log('\nServidor Rodando ' + app.get('url') + app.get('porta'));

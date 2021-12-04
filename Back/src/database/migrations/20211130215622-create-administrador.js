@@ -9,11 +9,6 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
       },
-      
-      nome: {
-        type: Sequelize.STRING(100),
-        allowNull: true
-      },
 
       cod_sis: {
         type: Sequelize.INTEGER,
@@ -22,6 +17,12 @@ module.exports = {
           model: 'Sistema',
           key: 'id'
         },
+      },
+
+      cpf_adm: {
+        type: Sequelize.STRING(11),
+        allowNull: false,
+        unique: true,
       },
 
       created_at: {
