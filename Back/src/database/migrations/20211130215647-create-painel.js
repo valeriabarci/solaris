@@ -15,7 +15,7 @@ module.exports = {
         allowNull: true,
       },
 
-      cnpj: {
+      id_pre: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {

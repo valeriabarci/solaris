@@ -5,6 +5,7 @@ class Morador extends Model {
         super.init({
             qtd: DataTypes.INTEGER,
             nome: DataTypes.STRING(100),
+            mor_cpf: DataTypes.STRING(11),
             rua: DataTypes.STRING(200),
             cep: DataTypes.INTEGER,
             renda_total: DataTypes.INTEGER,

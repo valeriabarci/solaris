@@ -8,8 +8,8 @@ module.exports = {
     },
 
     async store(req, res) {
-        const { qtd, nome, rua, cep, renda_total, num_residencial, email, bairro } = req.body;
-        const morador = await Morador.create({ qtd, nome, rua, cep, renda_total, num_residencial, email, bairro });
+        const { qtd, nome, mor_cpf, rua, cep, renda_total, num_residencial, email, bairro } = req.body;
+        const morador = await Morador.create({ qtd, nome, mor_cpf, rua, cep, renda_total, num_residencial, email, bairro });
         return res.status(200).send({
             status: 1,
             message: "Morador cadastrado com sucesso!!!",
@@ -18,11 +18,11 @@ module.exports = {
     },
 
     async update(req, res) {
-        const { qtd, nome, rua, cep, renda_total, num_residencial, email, bairro } = req.body;
+        const { qtd, nome, mor_cpf, rua, cep, renda_total, num_residencial, email, bairro } = req.body;
         const { codigo } = req.params;
 
         await Morador.update({
-            qtd, nome, rua, cep, renda_total, num_residencial, email, bairro
+            qtd, nome, mor_cpf, rua, cep, renda_total, num_residencial, email, bairro
         }, { where: {
             id: codigo
             }

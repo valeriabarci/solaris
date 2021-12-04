@@ -20,6 +20,12 @@ module.exports = {
         allowNull: true,
       },
 
+      mor_cpf: {
+        type: Sequelize.STRING(11),
+        allowNull: false,
+        unique: true
+      },
+
       rua: {
         type: Sequelize.STRING(200),
         allowNull: true,

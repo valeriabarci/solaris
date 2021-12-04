@@ -8,8 +8,8 @@ module.exports = {
     },
 
     async store(req, res) {
-        const { nome, cod_sis } = req.body;
-        const administrador = await Administrador.create({ nome, cod_sis });
+        const { cpf_adm, cod_sis } = req.body;
+        const administrador = await Administrador.create({ cpf_adm, cod_sis });
         return res.status(200).send({
             status: 1,
             message: "Administrador cadastrado com sucesso!!!",
@@ -18,11 +18,11 @@ module.exports = {
     },
 
     async update(req, res) {
-        const { nome, cod_sis } = req.body;
+        const { cpf_adm, cod_sis } = req.body;
         const { codigo } = req.params;
 
         await Administrador.update({
-            nome, cod_sis
+            cpf_adm, cod_sis
         }, { where: {
             id: codigo
             }

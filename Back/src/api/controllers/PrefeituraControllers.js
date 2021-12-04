@@ -8,8 +8,8 @@ module.exports = {
     },
 
     async store(req, res) {
-        const { } = req.body;
-        const prefeitura = await Prefeitura.create({ });
+        const { cnpj } = req.body;
+        const prefeitura = await Prefeitura.create({ cnpj });
         return res.status(200).send({
             status: 1,
             message: "Prefeitura cadastrada com sucesso!!!",
@@ -22,7 +22,7 @@ module.exports = {
         const { codigo } = req.params;
 
         await Prefeitura.update({
-            cnpj
+           
         }, { where: {
             id: codigo
             }
