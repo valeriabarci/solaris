@@ -5,12 +5,10 @@ const limparFormulario = (rua) =>{
     document.getElementById('bairro').value = '';
 }
 
-
 const preencherFormulario = (rua) =>{
     document.getElementById('rua').value = rua.logradouro;
     document.getElementById('bairro').value = rua.bairro;
 }
-
 
 const eNumero = (numero) => /^[0-9]+$/.test(numero);
 
@@ -32,7 +30,6 @@ const pesquisarCep = async() => {
     }else{
         document.getElementById('rua').value = 'CEP incorreto!';
     }
-
 }
 
 document.getElementById('cep')
